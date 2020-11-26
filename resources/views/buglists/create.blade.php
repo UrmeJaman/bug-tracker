@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="description" class="control-label mb-1">BUG DESCRIPTION</label>
-                                        <input id="description" name="description" type="tel" class="form-control cc-number identified visa" value="" data-val="true">
+                                        <input id="description" name="description" type="textarea" class="form-control cc-number identified visa" value="" data-val="true">
                                         <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
                                     </div>
                                     
