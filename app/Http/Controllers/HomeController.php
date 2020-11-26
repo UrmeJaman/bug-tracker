@@ -27,14 +27,14 @@ class HomeController extends Controller
   
     public function index()
     {
-       
+        $close=0;
+        $open=0;
+        $fixed=0;
         
-            $bug=buglist::all();
-            if(count($bug)>0){
-            $close=0;
-                $open=0;
-                $fixed=0;
-                foreach($bug as $bug)
+            $bugs=buglist::all();
+            if(count($bugs)>0){
+                
+                foreach($bugs as $bug)
                 {
                     if(($bug->bugStatus)=='CLOSE')
                     {
