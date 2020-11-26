@@ -1,0 +1,10 @@
+body {
+    background-color: #8a8787 !important;
+    /* background-image: url(../imges/index.jpeg) !important; */
+}
+.card-profile {
+    box-shadow: 0 4px 8px 0 rgb(196, 21, 21);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
