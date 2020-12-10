@@ -14,6 +14,7 @@
                             <th scope="col">TITLE</th>
                             <th scope="col">PROJECT</th>
                             <th scope="col">DESCRIPTION</th>
+                            <th scope="col">STATUS</th>
                             
                         </tr> 
                     </thead>
@@ -30,6 +31,21 @@
                                 
                             <td scope="col">{{$bug->project->title}}</td>
                             <td scope="col">{{$bug->bugdescription}}</td>
+
+                            @if (($bug->bugStatus)=="OPEN")
+                           
+                            <td class="text-danger" scope="col">{{$bug->bugStatus}}</td>
+
+                              
+                          @elseif (($bug->bugStatus)=="FIXED")
+                           
+                          <td class="text-warning" scope="col">{{$bug->bugStatus}}</td>
+                          @else 
+                          <td class="text-success" scope="col">{{$bug->bugStatus}}</td>
+                     
+                                
+                            @endif
+                           
 
                         </tr>
     
